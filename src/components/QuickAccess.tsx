@@ -99,7 +99,7 @@ export const QuickAccess = () => {
                     className={`w-full ${
                       room.status === 'available' 
                         ? 'bg-gradient-primary hover:shadow-hover' 
-                        : 'bg-gradient-secondary hover:shadow-hover'
+                        : 'bg-gradient-secondary hover:shadow-hover text-secondary-foreground'
                     }`}
                     disabled={room.status === 'later'}
                   >

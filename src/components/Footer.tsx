@@ -10,15 +10,15 @@ export const Footer = () => {
           {/* Logo & Description */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <BookOpen className="w-6 h-6 text-primary-foreground" />
+              <div className="w-10 h-10 bg-gradient-usm rounded-lg flex items-center justify-center">
+                <BookOpen className="w-6 h-6 text-white" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-foreground">
                   Biblioteca USM
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  Universidad Santa María
+                  Universidad Técnica Federico Santa María
                 </p>
               </div>
             </div>
@@ -87,25 +87,25 @@ export const Footer = () => {
             </h4>
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-3">
-                <MapPin className="w-4 h-4 text-primary" />
+                <MapPin className="w-4 h-4 text-secondary" />
                 <span className="text-muted-foreground">
-                  Av. Universidad, Caracas 1080, Venezuela
+                  Av. España 1680, Valparaíso, Chile
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 text-primary" />
+                <Phone className="w-4 h-4 text-secondary" />
                 <span className="text-muted-foreground">
-                  +58 212 555-0123
+                  +56 32 265 4000
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 text-primary" />
+                <Mail className="w-4 h-4 text-secondary" />
                 <span className="text-muted-foreground">
-                  biblioteca@usm.edu.ve
+                  biblioteca@usm.cl
                 </span>
               </div>
               <div className="flex items-start space-x-3">
-                <Clock className="w-4 h-4 text-primary mt-0.5" />
+                <Clock className="w-4 h-4 text-secondary mt-0.5" />
                 <div className="text-muted-foreground">
                   <p>Lun - Vie: 7:00 AM - 10:00 PM</p>
                   <p>Sáb - Dom: 9:00 AM - 6:00 PM</p>
@@ -135,7 +135,7 @@ export const Footer = () => {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="text-muted-foreground text-sm">
-              © 2024 Biblioteca USM. Todos los derechos reservados.
+              © 2024 Universidad Técnica Federico Santa María. Todos los derechos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">

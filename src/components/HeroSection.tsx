@@ -9,11 +9,11 @@ export const HeroSection = () => {
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
             Tu biblioteca
-            <span className="bg-gradient-primary bg-clip-text text-transparent"> inteligente</span>
+            <span className="bg-gradient-usm bg-clip-text text-transparent"> USM</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Accede fácilmente a todos los recursos académicos que necesitas.
-            Reserva salas, encuentra libros y explora bases de datos científicas.
+            Sistema integral de biblioteca universitaria. Reserva salas, encuentra recursos académicos 
+            y accede a bases de datos científicas de la Universidad Técnica Federico Santa María.
           </p>
         </div>
 
@@ -62,15 +62,15 @@ export const HeroSection = () => {
               </p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-center justify-center space-x-2 text-sm">
-                  <BookOpen className="w-4 h-4 text-primary" />
+                  <BookOpen className="w-4 h-4 text-secondary" />
                   <span>+50,000 títulos disponibles</span>
                 </div>
                 <div className="flex items-center justify-center space-x-2 text-sm">
-                  <ArrowRight className="w-4 h-4 text-primary" />
+                  <ArrowRight className="w-4 h-4 text-secondary" />
                   <span>Búsqueda inteligente</span>
                 </div>
               </div>
-              <Button variant="secondary" className="w-full bg-gradient-secondary hover:shadow-hover">
+              <Button className="w-full bg-gradient-secondary hover:shadow-hover text-secondary-foreground">
                 Buscar Libros
                 <Search className="w-4 h-4 ml-2" />
               </Button>
@@ -91,15 +91,15 @@ export const HeroSection = () => {
               </p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-center justify-center space-x-2 text-sm">
-                  <Database className="w-4 h-4 text-accent" />
+                  <Database className="w-4 h-4 text-primary" />
                   <span>Bases de datos especializadas</span>
                 </div>
                 <div className="flex items-center justify-center space-x-2 text-sm">
-                  <ArrowRight className="w-4 h-4 text-accent" />
+                  <ArrowRight className="w-4 h-4 text-primary" />
                   <span>Acceso 24/7</span>
                 </div>
               </div>
-              <Button variant="outline" className="w-full hover:bg-accent hover:text-accent-foreground hover:shadow-hover">
+              <Button variant="outline" className="w-full hover:bg-secondary hover:text-secondary-foreground hover:shadow-hover border-primary">
                 Explorar Recursos
                 <Globe className="w-4 h-4 ml-2" />
               </Button>
@@ -118,11 +118,11 @@ export const HeroSection = () => {
             <div className="text-sm text-muted-foreground">Salas de Estudio</div>
           </div>
           <div className="text-center animate-float" style={{ animationDelay: '1s' }}>
-            <div className="text-3xl font-bold text-accent mb-2">100+</div>
+            <div className="text-3xl font-bold text-primary mb-2">100+</div>
             <div className="text-sm text-muted-foreground">Bases de Datos</div>
           </div>
           <div className="text-center animate-float" style={{ animationDelay: '1.5s' }}>
-            <div className="text-3xl font-bold text-primary mb-2">24/7</div>
+            <div className="text-3xl font-bold text-secondary mb-2">24/7</div>
             <div className="text-sm text-muted-foreground">Acceso Online</div>
           </div>
         </div>
