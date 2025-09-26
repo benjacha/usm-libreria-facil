@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Clock, MapPin, Wifi, Monitor, Coffee, Volume2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const QuickAccess = () => {
   const availableRooms = [
@@ -95,17 +96,19 @@ export const QuickAccess = () => {
                     ))}
                   </div>
 
-                  <Button 
-                    className={`w-full ${
-                      room.status === 'available' 
-                        ? 'bg-gradient-primary hover:shadow-hover' 
-                        : 'bg-gradient-secondary hover:shadow-hover text-secondary-foreground'
-                    }`}
-                    disabled={room.status === 'later'}
-                  >
-                    {room.status === 'available' ? 'Reservar Ahora' : 
-                     room.status === 'soon' ? 'Reservar para 14:30' : 'Ver Horarios'}
-                  </Button>
+                  <Link to="/reservas">
+                    <Button 
+                      className={`w-full ${
+                        room.status === 'available' 
+                          ? 'bg-gradient-primary hover:shadow-hover' 
+                          : 'bg-gradient-secondary hover:shadow-hover text-secondary-foreground'
+                      }`}
+                      disabled={room.status === 'later'}
+                    >
+                      {room.status === 'available' ? 'Reservar Ahora' : 
+                       room.status === 'soon' ? 'Reservar para 14:30' : 'Ver Horarios'}
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -113,9 +116,11 @@ export const QuickAccess = () => {
         </div>
 
         <div className="text-center mt-8">
-          <Button variant="outline" size="lg">
-            Ver Todas las Salas
-          </Button>
+          <Link to="/reservas">
+            <Button variant="outline" size="lg">
+              Ver Todas las Salas
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
