@@ -71,6 +71,15 @@ export default function Reservas() {
     return date >= today && date <= threeDaysFromNow;
   };
 
+  const isWeekend = (date: Date) => {
+    const day = date.getDay();
+    return day === 0 || day === 6; // Sunday = 0, Saturday = 6
+  };
+
+  const isDisabledDate = (date: Date) => {
+    return !isWithinThreeDays(date) || isWeekend(date);
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <header className="bg-primary text-primary-foreground py-4 shadow-sm">
@@ -105,8 +114,11 @@ export default function Reservas() {
                   mode="single"
                   selected={selectedDate}
                   onSelect={(date) => date && setSelectedDate(date)}
-                  disabled={(date) => !isWithinThreeDays(date)}
-                  className="rounded-md border"
+                  disabled={isDisabledDate}
+                  className="rounded-md border w-full"
+                  modifiersClassNames={{
+                    disabled: "text-muted-foreground/30"
+                  }}
                 />
                 
                 <div className="mt-4 p-3 bg-muted rounded-md">
